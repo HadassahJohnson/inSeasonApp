@@ -1,3 +1,5 @@
-## InSeason is a unique recipe book that filters recipes based on what produce is currently in season in your area. ##
+## InSeason ##
+
+# InSeason displays your recipes based on ingredients which are currently in season in your area. #
 
 Currently InSeason is programmed to only NYState produce
