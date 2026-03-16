@@ -1,0 +1,38 @@
+package com.nowhere;
+
+import java.io.*;
+import java.util.*;
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
+import jakarta.servlet.annotation.*;
+import static org.apache.commons.text.StringEscapeUtils.escapeHtml4;
+
+@WebServlet("/new")
+public class AddRecipeServlet extends HttpServlet {
+    
+    @Override
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
+	throws IOException, ServletException {
+	doPost(request, response);
+    }
+
+
+    @Override
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+	HttpSession session = request.getSession();
+	
+	List<Recipe> recipes = (List<String>) session.getAttribute("recipes");
+
+	if (recipes == null) {
+	    recipes = new ArrayList<>();
+	    session.setAttribute("recipes", recipes);
+	}
+	
+	String title = request.getParameter("title");
+	String instruction = request.getParameter("instruction");
+
+	recipes.add(new Recipe(title, instruction));
+
+	response.sendRedirect("recipebook");
+	}
+}

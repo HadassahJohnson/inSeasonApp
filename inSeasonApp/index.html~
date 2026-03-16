@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head><title>In Season Home Page</title></head>
+  <body>
+    <h1>Welcome to the In Season home page!</h1>
+    <ul>
+      <li>
+	<a href="addrecipe.html" class="nav-button">Add a Recipe</a>
+      </li>
+      <li>
+	<a href="recipebook" class="nav-button">My Recipes</a>
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Add A Recipe</title>
+  </head>
+  <body>
+    <h2>Recipe Form</h2>
+    <form method="get" action"addRecipe">
+      <fieldset>
+	<legend>I don't know what a legend is</legend>
+	Title: <input type="text" title="title" minlength="5" maxlength="50" required /><br /><br />
+      </fieldset>
+      <fieldset>
+	<legend>Instructions</legend>
+	<textarea rows="5" cols="30" name="instructions">Enter your instructions here...</textarea>
+      </fieldset>
+    </form>
+  </body>
+</html>

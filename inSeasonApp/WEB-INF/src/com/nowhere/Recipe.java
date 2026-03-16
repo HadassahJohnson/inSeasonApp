@@ -1,0 +1,37 @@
+package com.nowhere;
+
+public class Recipe {
+    private String title;
+    private String instructions;
+    //    private List<String> ingredients;
+
+    public Recipe(String title, String instructions) {
+	this.title = title;
+	this.instructions = instructions;
+	//this.ingredients = ingredients;
+    }
+
+    public String getTitle() {
+	return title;
+    }
+
+    public String getInstructions() {
+	return instructions;
+    }
+
+    //    public String getIngredients() {
+    //	return ingredients;
+    // }
+
+    public void setTitle() {
+	this.title = title;
+    }
+
+    public void setInstructions() {
+	this.instructions = instructions;
+    }
+
+    //    public void setIngredients() {
+    //	this.ingredients = ingredients;
+    // }
+}
